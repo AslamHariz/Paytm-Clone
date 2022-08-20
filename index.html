@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Paytm: Secure & Fast UPI Payments, Recharge Mobile & Pay Bills</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens : {
+                    sm: '480px',
+                    md: '768px',
+                    lg:'976px',
+                    xl: '1440px'
+                },
+                exdent: {
+                    colors: {
+                        myblue: '#002970',
+                        mysky: '#00BDF2',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="mx-auto p-3 ">
+        <div class="flex items-center justify-between mx-auto w-full">
+            <div class="pt-2">
+                <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 inline xl:hidden cursor-pointer"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+                <img src="https://assetscdn1.paytm.com/images/catalog/category/5165/paytm_logo.png" alt="paytm_logo" class="inline w-32 sm:w-36 md:w-48 cursor-pointer">
+            </div>
+            <div class="hidden md:flex space-x-6 font-semibold text-lg">
+                <span class="hover:bg-gray-100 hover:py-2">Paytm for Consumer</span>
+                <span class="hover:bg-gray-100 hover:py-2">Paytm for Business</span>
+                <span class="hover:bg-gray-100 hover:py-2">Company</span>
+                <span class="hover:bg-gray-100 hover:py-2">Investor Relations</span>
+                <span class="hover:bg-gray-100 hover:py-2">Career</span>
+            </div>
+            <div class="flex border-solid border-2 bg-sky-500 text-white py-1 pl-5 rounded-full hover:bg-blue-900">
+                <a class="text-lg" href="#">Log In</a>
+                <img class="ml-3 w-7 overflow-hidden" src="https://assetscdn1.paytm.com/frontendcommonweb/efb01c36.svg" alt="login">
+            </div>
+        </div>
+    </nav>
+    <div class="relative bg-gray-200 p-2 text-center">
+        <span class="text-semibold">No Wallet KYC Required</span>
+        <span class="text-base">"😊"</span>
+        to pay usingh UPI on Paytm.
+        <a href="#">Learn More</a>
+    </div>
+
+    <!-- section hero -->
+    <section id="hero md:w-[1170px]">
+        <div class="flex flex-col md:items-center md:flex-row mx-auto md:space-x-6">
+            <div class="flex flex-col md:w-1/2 mt-20 ml-20">
+                <div class="flex justify-center md:justify-start">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view/310944/1654517453942.png" alt="" class="w-20">
+                </div>
+                <div class="font-bold text-center md:text-left text-5xl mt-5 md:mt-16">
+                <h1>India's Most-loved Payments App</h1>
+                </div>
+                <div class="hidden md:inline-block font-base text-2xl mt-5">
+                <p>Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more.</p>
+                </div>
+                <div class="flex justify-center mt- md:mt-1 md:justify-start">
+                    <div class="flex justify-center md:mt-5 items-center text-[15px] px-4 h-11 bg-black text-white font-medium border border-black rounded-3xl w-fit hover:text-black hover:bg-white cursor-pointer">
+                        Download the App
+                        <a href="#" class="pl-4"><svg class="group-hover:fill-black" width="14" height="16" viewBox="0 0 14 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"></path>
+                          </svg>
+                        </a>
+                        <a href="#" class="pl-4">
+                          <svg class="group-hover:fill-black" width="14" height="16" viewBox="0 0 14 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"></path>
+                          </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-20 flex justify-center my-5 items-center">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1656568118664.png" alt="" class="w-3/4">
+            </div>
+        </div>
+        <div></div>
+        
+    </section>
+
+    <!-- section sky -->
+    <section class="bg-sky-500 p-14">
+        <div class="flex flex-col md:flex-row">
+            <h1 class="m-auto text-4xl text-white font-bold mb-5 ml-24">Recharge & Pay Bills on Paytm.</h1>
+        </div>
+        <div class="flex flex-col md:flex-row items-center md:items-start mx-28 mt-5 text-base font-semibold text-white hover:transaction-all">
+            <div class="flex flex-col rounded-full w-36 mb-2">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="" class="w-16 bg-white rounded-full">
+                Recharge
+                <div class="relative">Prepaid</div>
+                <div class="relative flex">Mobile
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                   </svg>
+                </div>
+            </div>
+            <div class="flex flex-col rounded-full w-36 mb-2 md:ml-20">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733300/1626778824903.png" alt="" class="w-16 bg-white rounded-full">
+                Pay
+                <div class="relative">Rent</div>
+                <div class="relative flex">Payment
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                   </svg>
+                </div>
+            </div> 
+            <div class="flex flex-col rounded-full w-36 md:ml-20 mb-2">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png" alt="" class="w-16 bg-white rounded-full">
+                Pay
+                <div class="relative">Electricity</div>
+                <div class="relative flex">Bill
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                   </svg>
+                </div>
+            </div>
+             <div class="flex flex-col rounded-full w-36 md:ml-20 mb-2">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png" alt="" class="w-16 bg-white rounded-full">
+                Recharge
+                <div class="relative">DTH</div>
+                <div class="relative flex">Connection
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                   </svg>
+                </div>
+            </div> 
+            <div class="flex flex-col rounded-full w-36 md:ml-20 mb-2">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png" alt="" class="w-16 bg-white rounded-full">
+                Book
+                <div class="relative">Gas</div>
+                <div class="relative flex">Cylinder
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                   </svg>
+                </div>
+            </div>
+            <div class="flex flex-col rounded-full w-36 md:ml-20 mb-2">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733304/1627454209116.png" alt="" class="w-16 bg-white rounded-full">
+                Pay
+                <div class="relative">Credits</div>
+                <div class="relative flex">Card Bill
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                   </svg>
+                </div>
+            </div>
+            <div class="flex flex-col rounded-full w-36 md:ml-20 mb-2">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/757701/1626268580682.png" alt="" class="w-16 bg-white rounded-full">
+                All
+                <div class="relative">Payment</div>
+                <div class="relative flex">Services
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                   </svg>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- section blue -->
+    <section class="bg-blue-900 p-14">
+        <div class="flex flex-col md:flex-row">
+            <h1 class="m-auto text-4xl text-white font-bold mb-5 ml-24">Book & Buys on Paytm.</h1>
+        </div>
+        <div class="flex flex-col md:flex-row items-center md:items-start mx-28 mt-5 text-base font-semibold text-white">
+            <div class="flex flex-col rounded-full w-36 mb-2">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" alt="" class="w-16 bg-white rounded-full">
+                Movie Tickets
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+               </svg>
+            </div>
+            <div class="flex flex-col rounded-full w-36 mb-2 md:ml-20 ">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733296/1626259884425.png" alt="" class="w-16 bg-white rounded-full">
+                flight Tickets
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+               </svg>
+            </div>
+            <div class="flex flex-col font-xl rounded-full md:ml-20 w-36 mb-2">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729996/1626260477699.png" alt="" class="w-16 bg-white rounded-full">
+                Bus Tickets
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+               </svg>
+            </div>
+            <div class="flex flex-col rounded-full md:ml-20 w-36 mb-2">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729997/1626260495975.png" alt="" class="w-16 bg-white rounded-full">
+                Train Tickets
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+               </svg>
+            </div>
+            <div class="flex flex-col rounded-full md:ml-20 w-36 mb-2">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729998/1626259953707.png" alt="" class="w-16 bg-white rounded-full">
+                Car&Bikes
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+               </svg>
+            </div>
+            <div class="flex flex-col rounded-full md:ml-20 w-36 mb-2">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729999/1626259968563.png" alt="" class="w-16 bg-white rounded-full">
+                Internation flights
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+               </svg>
+            </div>
+            <div class="flex flex-col rounded-full md:ml-20 w-36 mb-2">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/730001/1626450848003.png" alt="" class="w-16 bg-white rounded-full">
+                Invest In Stocks
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+               </svg>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- section instrument -->
+    <section class="bg-slate-50">
+        <h1 class="md:text-5xl text-3xl font-bold mt-20 mb-10 ml-5 text-center md:inline-block md:ml-36">
+            Paytm Payment Instruments
+        </h1>
+        <div class="bg-white rounded-xl flex flex-col items-center md:flex-row md:mx-36 p-10">
+                <div class=" flex flex-col rounded-xl md:w-1/2 mx-10">
+                        <div class="text-lg font-semibold">
+                            <div class="flex justify-center md:justify-start items-center">
+                                <img class="w-20 mr-5 mt-5" src="https://assetscdn1.paytm.com/images/catalog/view/307185/1617861564011.png" alt="">
+                                Paytm Wallet
+                            </div>
+                            <div class="md:text-3xl text-center md:text-start text-xl font-bold mt-5">
+                                The Fastest Way to Pay In-store & Online.
+                            </div>
+                            <div class="text-lg text-center md:text-start font-medium py-5">
+                                Load up your Paytm Wallet for free and make payments in a jiffy at over 21 million stores, websites and apps.
+                            </div>
+                            <div class="flex justify-center mt-3 md:mt-1 md:justify-start">
+                                <div class="flex justify-center md:mt-5 items-center text-[15px] px-4 h-11 bg-black text-white font-medium border border-black rounded-3xl w-fit hover:text-black hover:bg-white cursor-pointer">
+                                    Download the App
+                                    <a href="#" class="pl-4"><svg class="group-hover:fill-black" width="14" height="16" viewBox="0 0 14 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"></path>
+                                      </svg>
+                                    </a>
+                                    <a href="#" class="pl-4">
+                                      <svg class="group-hover:fill-black" width="14" height="16" viewBox="0 0 14 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"></path>
+                                      </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="md:w-1/2 mt-5 md:mt-1 flex justify-center items-center">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728701/1618577020961.png" alt="" class="w-3/4">
+                </div>
+        </div>
+        <div class="bg-white rounded-xl flex flex-col items-center md:flex-row md:mx-36 mt-5 md:mt-20 p-10">
+                <div class=" flex flex-col rounded-xl md:w-1/2 mx-10">
+                        <div class="text-lg font-semibold">
+                            <div class="flex justify-center md:justify-start items-center">
+                                <img class="w-20 mr-5 mt-5" src="https://assetscdn1.paytm.com/images/catalog/view/307186/1615957674521.png" alt="">
+                                UPI Money Transfer
+                            </div>
+                            <div class="md:text-3xl text-center md:text-start text-xl font-bold mt-5">
+                                Pay anyone directly from your bank account.
+                            </div>
+                            <div class="text-lg text-center md:text-start font-medium py-5">
+                                Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm Wallet or Directly from your Bank Account.Plus, send & receive money from anyone.
+                            </div>
+                            <div class="flex justify-center mt-3 md:mt-1 md:justify-start">
+                                <div class="flex justify-center md:mt-5 items-center text-[15px] px-4 h-11 bg-black text-white font-medium border border-black rounded-3xl w-fit hover:text-black hover:bg-white cursor-pointer">
+                                    Download the App
+                                    <a href="#" class="pl-4"><svg class="group-hover:fill-black" width="14" height="16" viewBox="0 0 14 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"></path>
+                                      </svg>
+                                    </a>
+                                    <a href="#" class="pl-4">
+                                      <svg class="group-hover:fill-black" width="14" height="16" viewBox="0 0 14 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"></path>
+                                      </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="md:w-1/2 mt-5 md:mt-1 flex justify-center items-center">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728702/1626342071104.png" alt="" class="w-3/4">
+                </div>
+        </div>
+        <div class="bg-white rounded-xl flex flex-col items-center md:flex-row md:mx-36 mt-5 md:mt-20 p-10">
+            <div class=" flex flex-col rounded-xl md:w-1/2 mx-10">
+                <div class="text-lg font-semibold">
+                    <div class="flex justify-center md:justify-start items-center">
+                        <img class="w-20 mr-5 mt-5" src="https://assetscdn1.paytm.com/images/catalog/view/307191/1613622537678.png" alt="">
+                            </div>
+                            <div class="md:text-3xl text-center md:text-start text-xl font-bold mt-5">
+                                Want it? No more waiting for it.
+                            </div>
+                            <div class="text-lg text-center md:text-start font-medium py-5">
+                                with Paytm Postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things you want today and pay for them next month.
+                            </div>
+                            <div class="flex justify-center md:justify-start">
+                                <a class="border flex rounded-full bg-blue-900 text-white p-2 text-lg hover:border hover:border-blue-900 hover:bg-white hover:text-black" href="#">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center items-center">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850764/1626077030984.png" alt="" class="w-3/4">
+                </div>
+        </div>
+        <div class="flex flex-col items-center md:flex-row mx-auto md:space-x-6 md:pb-20">
+                <div class="rounded-xl md:w-1/2 bg-white mt-20 mx-10">
+                    <div class="text-lg font-semibold">
+                        <div class="flex flex-col justify-center md:items-start items-center md:justify-start mx-10">
+                                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640242865113.png" alt="" class="w-48">
+                                <h1 class="md:text-5xl texl-3xl font-bold md:text-start text-center mt-5">
+                                    Unlimited Cashback Every time
+                                </h1>
+                                <p class="text-lg font-semibold md:text-start text-center mt-5 ">
+                                    Paytm HDFC Bank Select Credit Card. A card with assured Cashback and incredible offers.
+                                </p>
+                            </div>
+                            <div class="flex justify-center mt-10">
+                                <img class="w-80" src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640241561388.png" alt="">
+                            </div>
+                        </div>
+                </div>
+                <div class="rounded-xl md:w-1/2 bg-white mt-20 mx-10 p-7 mb-20 md:mb-1">
+                        <div class="text-lg font-semibold">
+                            <div class="flex flex-col justify-center md:items-start items-center md:justify-start mx-10">
+                                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1640242163727.png" alt="" class="w-48">
+                                <h1 class="md:text-5xl texl-3xl font-bold md:text-start text-center mt-5">
+                                    India's Most Sincere Creid Card
+                                </h1>
+                                <p class="text-lg font-semibold md:text-start text-center mt-5 ">
+                                    Paytm SBI Card Select - With Intelligent Features & Great Rewards That Never Expire
+                                </p>
+                            </div>
+                            <div class="flex justify-center mt-10">
+                                <img class="w-80" src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1626079147084.png" alt="">
+                            </div>
+                        </div>
+                </div>
+        </div>   
+    </section>
+
+    <!-- section financial -->
+    <section class="">
+        <h1 class="md:text-5xl text-3xl font-bold md:mt-20 md:mb-10 ml-5 text-center md:inline-block md:ml-36">
+            Financial Services by Paytm
+        </h1>
+        <div class="flex flex-col items-center md:flex-row md:mx-36 md:space-x-6 pb-20">
+                <div class="flex flex-col md:w-1/2 bg-white md:mt-20 mx-10">
+                    <div class="text-lg font-semibold">
+                        <div class="flex flex-col justify-center md:items-start items-center mx-10">
+                            <img class="w-60" src="https://assetscdn1.paytm.com/images/catalog/view/307193/1617696576778.png" alt="">
+                            <h1 class="md:text-5xl texl-3xl font-bold mt-5">
+                                India's most sincere bank.
+                            </h1>
+                            <p class="text-lg font-semibold md:text-start text-center mt-5 ">
+                                Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With instant account opening, virtual debit card and zero balance requirements, experience the future of banking today.                                
+                            </p>
+                        </div>
+                        <div class="flex space-x-3 justify-center md:justify-start">
+                            <a class="border flex rounded-full bg-blue-900 text-white p-2 md:ml-9 text-lg hover:border hover:border-blue-900 hover:bg-white hover:text-black" href="#">
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>   
+                </div>
+                <div class="flex justify-center items-center md:mt-20 mt-5">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728826/1626076427497.png" alt="" class="w-3/4">
+                </div>
+        </div>
+        <div class="bg-slate-100 rounded-xl flex flex-col items-center md:flex-row md:mx-36 md:space-x-6 py-10">
+            <div class="flex justify-center items-center md:mt-20">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/788781/1626077377376.png" alt="" class="w-3/4">
+            </div>
+            <div class="flex flex-col md:w-1/2 bg-slate-100 md:mt-20 mx-10 md:mx-24">
+                <div class="text-lg font-bold">
+                    <div class="flex flex-col justify-center md:items-start items-center mt-5">
+                        <img class="w-48" src="https://assetscdn1.paytm.com/images/catalog/view/308774/1617696247991.png" alt="">                        </div>
+                        <div class="md:text-5xl texl-3xl md:text-start text-center font-bold mt-5 md:mr-20">
+                            Build Long-term Wealth & Achieve your Goals.
+                            <p class="text-lg font-semibold md:text-start text-center mt-5 ">
+                                Investing on Paytm Money is transparent, low-cost and commission-free. Buy stocks & mutual funds that can help you create wealth & realise your dreams.
+                            </p>
+                            <div class="flex justify-center md:justify-start space-x-3 ">
+                                <a class="border flex rounded-full bg-blue-900 text-white p-2 text-lg hover:border hover:border-blue-900 hover:bg-white hover:text-black" href="#">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="flex flex-col items-center md:flex-row md:mx-36 md:space-x-6 pb-20 ">
+            <div class="flex flex-col md:w-1/2 bg-white md:mt-20 mx-10 md:mx-24">
+                <div class="text-lg font-semibold">
+                    <div class="flex flex-col justify-center md:items-start items-center mt-5">
+                        <img class="w-48" src="https://assetscdn1.paytm.com/images/catalog/view/308775/1653901470333.jpeg" alt="">
+                            </div>
+                            <div class="md:text-5xl texl-3xl md:text-start text-center font-bold mt-5">
+                                Insurance made easy.
+                                <p class="text-lg font-semibold md:text-start text-center mt-5 ">
+                                    Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes the worry of getting insured by making it simple, convenient & easy-to-understand.
+                                </p>
+                                <div class="flex justify-center md:justify-start space-x-3 ">
+                                    <a class="border flex rounded-full bg-blue-900 text-white p-2 text-lg hover:border hover:border-blue-900 hover:bg-white hover:text-black" href="#">
+                                        Learn More
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="md:w-1/2 mt-5 flex justify-center items-center">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/788790/1653913927257.png" alt="" class="w-3/4">
+                </div>
+        </div>
+        <div class="bg-slate-100 rounded-xl flex flex-col items-center md:flex-row md:mx-36 md:space-x-6 py-10">
+            <div class="flex justify-center items-center md:mt-20">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850765/1655987252365.png" alt="" class="w-3/4">
+            </div>
+            <div class="flex flex-col md:w-1/2 bg-slate-100 md:mt-20 mx-10 md:mx-24">
+                <div class="font-lg font-bold">
+                    <div class="flex flex-col justify-center md:items-start items-center mt-5">
+                        <img class="w-48" src="https://assetscdn1.paytm.com/images/catalog/view/308777/1617695287770.png" alt="">
+                    </div>
+                    <div class="md:text-5xl texl-3xl md:text-start text-center font-bold mt-5 md:mr-20">
+                        Get a Personal Loan in 2 Minutes.
+                        <p class="text-lg font-semibold md:text-start mt-5 text-center">
+                            Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% digital, transparent and paperless.
+                        </p>
+                        <div class="flex justify-center md:justify-start space-x-3 ">
+                            <a class="border flex rounded-full bg-blue-900 text-white p-2 text-lg hover:border hover:border-blue-900 hover:bg-white hover:text-black" href="#">
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>   
+    </section>
+
+    <!-- section business -->
+    <section class="">
+        <h1 class="md:text-5xl text-3xl font-bold md:mt-20 mt-10 mb-10 ml-5 text-center md:inline-block md:ml-36">
+            Business Services by Paytm
+        </h1>
+        <div class="flex bg-slate-100 rounded-xl flex-col items-center md:flex-row md:mx-36 md:space-x-6 pb-20">
+                <div class="rounded-xl md:w-1/2 md:mt-20 mx-10 md:mx-24">
+                    <div class="md:text-5xl texl-3xl md:text-start text-center font-bold mt-5">
+                        Accept Payments online with ease
+                        <p class="text-lg font-semibold md:text-start text-center mt-5 ">
+                            Grow your business with the payment gateway that powers India's largest brands and even the Paytm App
+                        </p>
+                        <div class="flex justify-center md:justify-start space-x-3 ">
+                            <a class="border flex rounded-full bg-blue-900 text-white p-2 text-lg hover:border hover:border-blue-900 hover:bg-white hover:text-black" href="#">
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>   
+                </div>
+                <div class="md:w-1/2 flex justify-center items-center">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853877/1626077000254.png" alt="" class="w-3/4">
+                </div>
+        </div>
+        <div class="flex bg-slate-100 rounded-xl flex-col items-center md:flex-row md:mx-36 md:my-20 mt-10 md:space-x-6 pb-20">
+            <div class="rounded-xl md:w-1/2 md:mt-20 mx-10 md:mx-24">
+                <div class="md:text-5xl texl-3xl md:text-start text-center font-bold mt-5">
+                    In-shop payments powered by Paytm.
+                    <p class="text-lg font-semibold md:text-start text-center mt-5 ">
+                        Millions of small & big businesses use Paytm to accept payments anywhere any time with a wide range of solutions for all kind of merchants
+                    </p>
+                    <div class="flex justify-center md:justify-start space-x-3 ">
+                        <a class="border flex rounded-full bg-blue-900 text-white p-2 text-lg hover:border hover:border-blue-900 hover:bg-white hover:text-black" href="#">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>   
+            <div class="rounded md:w-1/2 mt-20">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853880/1656675942486.png" alt="" class="w-3/4">
+            </div>
+        </div>   
+    </section>
+    
+    <!-- section business tools -->
+    <section class="mb-20">
+        <h1 class="md:text-5xl text-3xl font-bold md:mt-20 md:mb-10 ml-5 text-center md:inline-block md:ml-36">
+            Business Tools to help your business grow
+        </h1>
+        <div class="flex flex-col md:flex-row ml-36 ">
+            <div class="flex flex-col md:w-2/12 mr-20">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/854033/1626081565192.png" class="w-56" alt="">
+                <div class="relative md:text-3xl text-xl font-bold mt-10">
+                    POS Billing <span class="block">Software</span>
+                </div>
+                <p class="relative text-base mt-5 font-semibold">
+                    Say Hello to Smart Retail Business Management
+                </p>
+                <div class="inline-block">
+                    <a href="https://business.paytm.com/pos-billing-software" class="font-bold"><span>Learn More</span></a>
+                </div>
+            </div>
+            <div class="flex flex-col md:w-2/12 mr-20">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/854035/1626081071077.png" class="w-56" alt="">
+                <div class="relative md:text-3xl text-xl font-bold mt-10">
+                    Paytm for <span class="block">Business App</span>
+                </div>
+                <p class="relative text-base mt-5 font-semibold">
+                    Everything you need to manage your business on your phone
+                </p>
+                <div class="inline-block">
+                    <a href="https://business.paytm.com/pos-billing-software" class="font-bold"><span>Learn More</span></a>
+                </div>
+            </div>
+            <div class="flex flex-col md:w-2/12 mr-20">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/854036/1656568216166.png" class="w-56" alt="">
+                <div class="relative md:text-3xl text-xl font-bold mt-10">
+                    Advertise on <span class="block">Paytm</span>
+                </div>
+                <p class="relative text-base mt-5 font-semibold">
+                    Grow your business by advertising on India's largest mobile business
+                </p>
+                <div class="inline-block">
+                    <a href="https://business.paytm.com/pos-billing-software" class="font-bold"><span>Learn More</span></a>
+                </div>
+            </div>
+            <div class="flex flex-col md:w-2/12 mr-20">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/854038/1626081814411.png" class="w-56" alt="">
+                <div class="relative md:text-3xl text-xl font-bold mt-10">
+                    Business <span class="block">Khata</span>
+                </div>
+                <p class="relative text-base mt-5 font-semibold">
+                    Managing Khata made easy
+                </p>
+                <div class="inline-block">
+                    <a href="https://business.paytm.com/pos-billing-software" class="font-bold"><span>Learn More</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- money scroll -->
+    <section class="bg-sky-50 md:py-5">
+        <div class="md:w-10/12 md:my-20 md:ml-36 ml-10 p-10 bg-white rounded-xl">
+            <div class="flex rounded-xl">
+                <div class="w-52">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view/307196/1626420555412.png" alt="" class="w-40 mb-10 items-center">
+                    <p class="font-base font-semibold">
+                        Get started on wealth creation journey with Zero brokerage fee & no hidden charges.
+                        <a class="text-sky-500 font-lg font-semibold block" href="https://www.paytmmoney.com/stocks">Learn More</a>
+                    </p>
+                </div>
+                <div class="md:w-10/12 ml-10 relative">
+                    <ul class="flex flex-col md:flex-row overflow-hidden whitespace-nowrap">
+                        <li class="rounded-lg bg-sky-300 mr-10 text-white whitespace-normal text-center w-52 flex items-center flex-col">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728894/1618576143299.png" alt="" class="w-36 mt-2 duration-300">
+                            <span class="block w-28 text-xl font-bold">Invest in Stocks</span>
+                        </li>
+                        <li class="rounded-lg bg-sky-300 mr-10 text-white whitespace-normal text-center w-52 flex items-center flex-col">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728895/1618575899205.png" alt="" class="w-36 mt-2 duration-300">
+                            <span class="block w-28 text-xl font-bold">Apply for IPO</span>
+                        </li>
+                        <li class="rounded-lg bg-sky-300 mr-10 text-white whitespace-normal text-center w-52 flex items-center flex-col">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/800760/1618831809222.png" alt="" class="w-36 mt-2 duration-300">
+                            <span class="block w-28 text-xl font-bold">Invest in ETFs</span>
+                        </li>
+                        <li class="rounded-lg bg-sky-300 mr-10 text-white whitespace-normal text-center w-52 flex items-center flex-col">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728896/1618575990183.png" alt="" class="w-36 mt-2 duration-300">
+                            <span class="block w-28 text-xl font-bold">Buy Gold</span>
+                        </li>
+                        <li class="rounded-lg bg-sky-300 text-white whitespace-normal text-center w-52 flex items-center flex-col">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728899/1618576408440.png" alt="" class="w-36 mt-2 duration-300">
+                            <span class="block w-28 text-xl font-bold">Invest in Mutual Funds</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- travel scroll -->
+    <section class="bg-sky-50 md:py-5">
+        <div class="md:w-10/12 md:my-20 md:ml-36 ml-10 p-10 bg-white rounded-xl">
+            <div class="flex rounded-xl">
+                <div class="w-60">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view/307197/1626419838546.png" alt="" class="w-40 items-center mb-10">
+                    <p class="font-base font-semibold">
+                        Best travel solutions with quick ticket bookings, great offers and easy returns.
+                        <a class="text-sky-500 text-lg font-semibold block" href="https://www.paytmmoney.com/stocks">Learn More</a>
+                    </p>
+                </div>
+                <div class="md:w-10/12 ml-10 relative">
+                    <ul class="flex flex-col md:flex-row whitespace-nowrap">
+                        <li class="rounded-lg bg-sky-300 mr-10 text-white whitespace-normal text-center w-72 flex items-center flex-col">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/863734/1627552693557.png" alt="" class="rounded-full mt-2 w-20">
+                            <span class="block w-28 text-xl font-bold">Flat 14% Cashback </span>
+                            <span class="block text-xl">With Code WELCOMEFLIGHT</span>
+                        </li>
+                        <li class="rounded-lg bg-sky-300 mr-10 text-white whitespace-normal text-center w-72 flex items-center flex-col">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/864144/1627566096011.png" alt="" class="rounded-full mt-2 w-20">
+                            <span class="block w-28 text-xl font-bold">100% Refund</span>
+                            <span class="block text-xl">With Paytm's Cancellation Protect</span>
+                        </li>
+                        <li class="rounded-lg bg-sky-300 mr-10 text-white whitespace-normal text-center w-72 flex items-center flex-col">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/864145/1627566172335.png" alt="" class="rounded-full mt-2 w-20">
+                            <span class="block w-28 text-xl font-bold">Flat 10% Cashback </span>
+                            <span class="block text-xl">With Code HAPPYBUS</span>
+                        </li>
+                        <li class="rounded-lg bg-sky-300 mr-10 text-white whitespace-normal text-center w-72 flex items-center flex-col">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/864151/1627567062180.png" alt="" class="rounded-full mt-2 w-20">
+                            <span class="block w-28 text-xl font-bold">Sanitised Bus Options With TravelSafe+</span>
+                        </li>
+                        <li class="rounded-lg bg-sky-300 mr-10 text-white whitespace-normal text-center w-72 flex items-center flex-col">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/864152/1627566492097.png" alt="" class="rounded-full mt-2 w-20">
+                            <span class="block w-28 text-xl font-bold">Hassle Free Train Ticket Bookings</span>
+                        </li>
+                        <li class="rounded-lg bg-sky-300 text-white whitespace-normal text-center w-72 flex items-center flex-col">
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/864153/1627566396231.png" alt="" class="rounded-full mt-2 w-20">
+                            <span class="block w-28 text-xl font-bold">PNR Status Check In Few Simple Clicks</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- footer  -->
+    <footer class="">
+        <div class="m-auto px-10 md:w-4/5">
+            <div class="flex flex-col md:flex-row md:justify-between md:my-20 my-10">
+                <div class="flex">
+                    <span class="w-56 font-semibold text-xl mr-10">Download Paytm App to Pay from anywhere</span>
+                <a rel="noopener noreferrer" target="_blank">
+                    <img alt="Download Paytm iOS app" src="https://assetscdn1.paytm.com/frontendcommonweb/71229188.svg">
+                </a>
+                <a rel="noopener noreferrer" target="_blank">
+                    <img alt="Download Paytm Android app" src="https://assetscdn1.paytm.com/frontendcommonweb/33d9d7f1.svg">
+                </a>
+                </div>
+                <div class="flex mt-10 md:mt-1">
+                    <a rel="noopener noreferrer" target="_blank" class="mr-10">
+                        <img alt="twitter_icon" src="https://assetscdn1.paytm.com/frontendcommonweb/508b83d1.svg">
+                    </a>
+                    <a rel="noopener noreferrer" target="_blank" class="mr-10">
+                        <img alt="instagram_icon" src="https://assetscdn1.paytm.com/frontendcommonweb/f9c15a7a.svg">
+                    </a>
+                    <a rel="noopener noreferrer" target="_blank">
+                        <img alt="facebook_icon" src="https://assetscdn1.paytm.com/frontendcommonweb/ad9d15ee.svg">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="flex flex-row-reverse font-semibold justify-end">
+                    <span class="">More about Paytm</span>
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/frontendcommonweb/877b7c00.svg" alt="plus" class="mx-3">
+                    </div>
+                </div>
+                <h1 class=" font-semibold">Paytm - India's Most Popular Platform for Money Transfer, BHIM UPI Payments, Recharges and other online payments</h1>
+                <p class="font-sm font-normal">
+                    Paytm - India's largest mobile e-commerce website is an ultimate destination for prompt
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Online Recharge</a>
+                    , DTH, Data Card & Metro Card Recharge and Mobile Bill Payment for Airtel, Aircel, BSNL, Idea, MTNL, Vodafone & other operators for all the circles across India. Enjoy our online recharge and bill payment service along with best bonus packs of internet & roaming within a jiffy.
+                </p>
+                <p class=" font-normal">
+                    Now you don't have to look at various websites to find the best entertainment option in your city. You can book movie tickets, event tickets and travel tickets within minutes on Paytm.com. Paytm login is very easy on the
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Paytm app</a>
+                    and Paytm website. Just enter your number and Password/OTP to login and process all the transactions instantly on Paytm.
+                </p>
+                <h2 class="font-semibold">Mobile Recharge - Airtel, Vodafone, Idea, Jio, BSNL, MTNL, and More</h2>
+                <p class=" font-normal">
+                    Now making an online recharge has become very easy and safe with your Paytm account on Paytm.com. Effortlessly make payments through our safe methods, processed through secured gateways for
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Airtel Recharge</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Jio Recharge</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Vodafone Idea Recharge</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> MNTL Recharge</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> BSNL Recharge</a>,
+                    . Paytm also provide you with exciting cashback and offers on Paytm
+                </p>
+                <p class=" font-normal">
+                    All The Latest Plans And Packs For Your Mobile Recharge- Paytm makes it very easier for you to make recharge online with Paytm. You can browse all the latest recharge plans and offers right on Paytm itself. More than that, Paytm.com or Paytm app fetches your operator and circle automatically as soon as you enter your number, making the process faster and easier for you.
+                </p>
+                <h2 class=" font-semibold">Online Shopping- Find Best Deals Online On Groceries, Appliances And Latest Smart Phones at Paytm </h2>
+                <p class=" font-normal">
+                    Paytm Mall Maha Shopping Festival Sale is back this festive season. Shop on Paytm Mall and enjoy the best ever online Diwali sale you can come across. With a vibrant range of products from electronic gadgets, mobiles and appliances to fashion accessories and footwear collections at unbelievable prices, this online sale is going to be the year's best shopping experience!
+                </p>
+                <p class=" font-normal">
+                    Tech Fanatics, if you are eager to buy the best
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> mobile</a>
+                    phones then here is an ultimate mobile destination for you. Discover the wide selection of mobiles like VIVO V15 Pro, Oppo F11 Pro, Samsung Galaxy A50, iPhone X, Redmi Y2, Lenovo K8 Note, VIVO Y55S, Redmi Note 6 Pro so on that offers the perfect combination of performance and exciting features. There is a lot more for you to explore, check out the exhaustive collection of the latest smartphones at great discounts and Cashbacks on Paytm Mall. Add a brand new vehicle to your collection, enjoy the exclusive online pre-booking service for
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> new cars & bikes</a>
+                    at Paytm. Be the first one to bring home the newly launched automobile, forget sweating for owning the latest car & bike in the town. With Paytm, you can make pre-booking online for cars & bikes in seconds along with exclusive offers that are especially for you.
+                </p>
+                <p class=" font-normal">
+                    Cashback would be added as Paytm Cash, which is One97 Communications Ltd. loyalty program. It can be used to pay for goods &a services sold by merchants that accept 'Pay with Paytm'.
+                </p>
+                <p class=" font-normal">
+                    Grab jaw-dropping
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Paytm Coupons</a> 
+                    , Deals, Discounts & Cashback Offers while shopping, who wouldn't love to shop at discounted prices Paytm presents several
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> offers</a>
+                    across a huge range of products under our stimulating stores. Shop more & save even more at Sunday Bazaar, Bargain Bazaar and Under 199 stores. Double the joy of weekend shopping, avail electrifying offers at our Sunday Bazaar, this is surely going to make your Sunday more amazing Buy your favourites at the lowest price possible with tons of discounts at Under 199 Store and shop more with smartness from our irresistible Bargain Bazaar.
+                </p>
+                <h2 class=" font-semibold">Online Tickets - Flight Tickets, Train Tickets, Bus Tickets And Hotels Booking with Great Ease </h2>
+                <p class=" font-normal">
+                    Save money and time by booking your travel tickets on Paytm. You can find
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> cheap flight tickets</a>
+                    , train tickets and bus tickets on Paytm. Compare the prices, get schedules, pick the best-suited seat and experience easy ticket booking services online. You can also save money on your travel by applying promo codes on flights, buses, trains &
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">hotels bookings</a>
+                    to get cashback in your Paytm wallet on your travel tickets.
+                </p>
+                <p class=" font-normal">
+                    <span class="font-bold">Flight Tickets</span>
+                    - Make your flight booking online on Paytm to find cheap flight tickets and
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">flight tickets</a>
+                    offers. Just enter your boarding and destination city to know all the flight tickets prices for both
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">domestic flights</a>
+                    and
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">Internation flights</a>.
+                </p>
+                <p class=" font-normal">
+                    <span class="font-bold">Train Ticket Booking</span>
+                    - 
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">Check PNR status</a>, find train schedule and
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">train ticket bookings</a>
+                    . Just enter your boarding and destination station or city to know all the train ticket prices. Make instant train reservation through Paytm and save money with cashback.
+                </p>
+                <p class=" font-normal">
+                    <span class="font-bold">Bus Ticket</span>
+                    - Make fast online
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">bus ticket bookings</a>
+                    for both AC and Non-AC buses, private and government buses on Paytm. Find all the buses and timings along with
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">bus ticket offers</a>
+                    for your bus tickets.
+                </p>
+                <h2 class=" font-semibold">>Mobile, DTH and Data Card Recharge & Payment On-The-Go</h2>
+                <p class=" font-normal">
+                    No need to rush to the market for
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> DTH Recharge</a>
+                    or
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">Mobile Bill Payment</a>
+                    , just login to Paytm and make immediate payments. Cherish your experience with exciting Cashback and Discounts on every recharge or bill payment you make with us. Our online recharge and bill payment service is a one-stop solution for fast & easy Prepaid Mobiles, DTH & Data Card recharge and Postpaid Mobiles.
+                </p>
+                <p class="font-sm font-normal">
+                    <span class="font-bold">DTH Recharge</span>
+                    - Make DTH recharge online and get DTH recharge offers on Paytm.
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">Tata sky recharge</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">Airtel DTH recharge</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">Videocon DTH recharge</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">Sun Direct recharge</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">Dish TV recharge</a>,
+                    and more on Paytm.com. Find all the latest DTH recharge offers and plans only on Paytm.
+                </p>
+                <p class=" font-normal">
+                    <span class="font-bold">Data Card Recharge</span>
+                    - Get your
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Airtel Data Card Recharge</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Jio Data Card Recharge</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Vodafone Idea Data Card Recharge</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> MNTL Data Card Recharge</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> BSNL Data Card Recharge</a>,
+                    now on Paytm.com and avail cashback by applying promo codes.
+                </p>
+                <p class=" font-normal">
+                    <span class="font-bold">Data Card Bill Payment</span>
+                    : Pay your data card bills on your postpaid connection of
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Airtel</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Idea</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Vodafone</a>,
+                </p>
+                <p class=" font-normal">
+                    Visit us and recharge your Prepaid Mobile, DTH and Data Card or Make Postpaid Mobile Bill Payments and other Utility Bill Payments in a click and indulge into an unbelievable
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Online shopping</a>
+                    experience.
+                </p>
+                <h2 class=" font-semibold">Buy FASTag Online And Move Quickly Through the Toll Lanes:</h2>
+                <p class=" font-normal">
+                    Avoid long queues at the toll lanes and move quickly through them with the help of Paytm
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> FASTag</a>
+                    . It is very easy to buy FASTag for your vehicle at Paytm in just a few minutes. Order Toll-Tag now or just register for one at Paytm instantly and drive freely with the toll tags.
+                </p>
+                <h2 class=" font-semibold">Online Bill Payment Postpaid Bills, Quick Utility Bill, Insurance, Loan & Education Fee Payment</h2>
+                <p class=" font-normal">
+                    <span class="font-bold">Post-paid Bill Payment</span>
+                    - Mobile Post-paid bill payments for all the renowned operators such as
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Airtel</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Jio</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Vodafone Idea Pospaid</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> MNTL</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> BSNL</a>,
+                    are available on Paytm.com.
+                </p>
+                <p class=" font-normal">
+                    Pay
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Electricity Bill</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Gas Bill</a>
+                    & Water Bill instantly in just a few clicks Enjoy uncomplicated utility bill online payment service without even travelling to the stores at Paytm. We are no doubt a reliable platform for speedy electricity, gas & water bill payment.
+                </p>
+                <p class=" font-normal">
+                    <span class="font-bold">Electricity Bill Payment</span>
+                    - Pay your electricity bills online on Paytm.com and avoid waiting in the queues for hours with Paytm.com. Pay electricity bills in
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Goa Electricity Bill Payment</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Bihar Electricity Bill Payment</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Haryana Electricity Bill Payment</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Maharastra Electricity Bill Payment</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Punjab Electricity Bill Payment</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Telangana Electricity Bill Payment</a>
+                    and many more cities.
+                </p>
+                <p class=" font-normal">
+                    <span class="font-bold">Gas and Water Bill Payment</span>
+                    - Pay your water bills within seconds in of
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Delhi Jal Board</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Indore Municipal Corporation</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Gwalior Municipal Corporation</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Bhopal Municipal Corporation</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Banglore Water Supply and Sewage Board</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Surat Municipal Corporation</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Pune Municipal Corporation</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> uttrakhand Jal Sansthan</a>
+                    and more.
+                </p>
+                <p class=" font-normal">
+                    <span class="font-bold">Pay gas bills</span>
+                    of
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Indraprastha Gas Limited</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Gujarat Gas Limited</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Adani Gas Limited</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Aavantika Gas Limited</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Vadodara Gas Limited</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Maharastra Natural Gas Ltd</a>
+                    and more.
+                </p>
+                <p class=" font-normal">
+                    <span class="font-bold">Fee Payment, Metro Card Recharge, Insurance Premium and Gold Loan</span>
+                    - Forget those gigantic queues,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">pay admission fee</a>
+                    or registration fee for various Institutes, Schools &amp; Colleges online here and save your time. We ensure to provide you with a seamless and speedy service every time you visit us. Now you can also
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">recharge metro card</a>
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">pay insurance premium</a>
+                    & gold loan online with Paytm through the comfort of wherever you are.
+                </p>
+                <p class=" font-normal">
+                    <span class="font-bold">Landline and Bill Payment</span>
+                    - Pay landline and broadband bills of all the major operators such as
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Airtel</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Hathway</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Asianet Broadband</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Alliance Broadband</a>,
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Tata Play Fiber</a>,
+                    and many more at Paytm.com.
+                </p>
+                <h2 class=" font-semibold">Mutual Fund Investments made Simple, Transparent and Accessible with Paytm Money</h2>
+                <p class=" font-normal">
+                    Ab Mutual Funds ke liye bhi Paytm Karo. Presenting, Paytm Money - India's Most Sincere Wealth Adviser. You can now begin your
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> mutual fund</a>
+                    investment journey on the Paytm Money App with 100% paperless KYC verification. Open your investment account within minutes & start an SIP in mutual funds with just Rs.100 on the very same day. Take an assessment of your appetite for risk with our Free Risk Profile Assessment. Explore and invest in the
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> best mutual funds</a>
+                    rated by leading research agencies and achieve your personal and financial goals.
+                </p>
+                <p class=" font-normal">
+                    At Paytm Money, you can manage your SIPs, request portfolio-related statements and view the latest portfolio updates. Enjoy the
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> mutual fund benefits</a>
+                    of absolutely secure investments on the Paytm Money platform with convenient payment options like Net Banking, UPI and auto-Pay
+                </p>
+                <h2 class=" font-semibold">Events, Movies and Endless Entertainment- Live, Laugh, Enjoy with Paytm.com</h2>
+                <p class=" font-normal">
+                    Relive the moment and revive your daily routine with an amazing experience at an incredible amusement park. Book tickets for theme parks & water parks in seconds at Paytm.com and get ready to make your day an adventurous one. Enjoy the hottest buzz in the town, do not miss out the latest shows and events of your favourite artists, be it music concert or a carnival, book your tickets online at our portal and catch the beats without any hassle. Our entertainment section enables you to book tickets online for Movies and Events at the matter of a few clicks and escape from your busy schedule.
+                </p>
+                <p class=" font-normal">
+                    <span class="font-bold">Movie Ticket Booking</span>
+                    - Find movie showtimes, movie theatres to book your movie tickets online and get movie ticket offers only on Paytm.com
+                </p>
+                <p class=" font-normal">
+                    Paytm's
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> 24x7
+                        Help is always at your service to assist you in case of any difficulties.
+                   </a>
+                   <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">
+                    <h2 class="font-md font-semibold">Investments made Simple, Transparent and Accessible with Paytm Money</h2>
+                   </a>
+                </p>
+                <p class=" font-normal">
+                    <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> 24x7
+                        <span class="font-bold">Presenting Paytm Money</span>
+                        - India's Most Sincere Wealth Adviser. You can now begin your
+                   </a>
+                   <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold">Investments</a>
+                   journey on the Paytm Money App with 100% paperless KYC verification. Open your investment account within minutes & start investing. Take an assessment of your appetite for risk with our Free Risk Profile Assessment.
+                </p>
+                <p class=" font-normal">
+                    <span class="font-bold">
+                        <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Mutual Funds</a>
+                    </span>
+                    - Our first offering to enable users to invest in direct mutual funds. In this, you get to save on commissions & earn up to 1% higher returns than regular funds. Easy SIP management and a fully digital KYC process would make your investing experience more rewarding.
+                </p>
+                <p class=" font-normal">
+                    <span class="font-bold">
+                        <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> National Pension System (NPS)</a>
+                    </span>
+                    - This latest addition to our tax-saving product basket helps you to earn market-linked returns and accumulate a higher corpus for a comfortable retirement. Additionally, you get to claim an extra tax deduction of up to Rs 50,000 over and above Section 80C benefit of Rs 1,50,000 and save Rs 62,400 in taxes annually.
+                </p>
+                <p class=" font-normal">
+                    <span class="font-bold">
+                        <a href="https://paytm.com/recharge" class="text-sky-400 font-semibold"> Stocks</a>
+                    </span>
+                    - Stocks are now live on Paytm Money. With a 100% paperless account opening and a fully digital KYC process, you can become investment-ready within 24 hours. Moreover, you can enjoy both intraday trading in stocks & Zero Brokerage on delivery trading for life! Also, you can set price alerts & create multiple watchlists to track real-time price changes of up to 50 stocks.
+                </p>
+            </div>
+            <div class="flex flex-row-reverse font-md font-semibold justify-end">
+                <span class="mx-3">Frequently Asked Questions</span>
+                <div>
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 0.999023V11.999" stroke="#333333" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                        <path d="M1.00024 6.49902H12.0002" stroke="#333333" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+                <h2 class=" font-semibold">What is Paytm?</h2>
+                <p class=" font-normal">
+                    Paytm stands for Pay through mobile and it is India's largest mobile payments and commerce platform. It lets you transfer money instantly to anyone at zero cost using the Paytm Wallet. You can make cashless transactions at several places like taxi and autos, petrol pumps, grocery shops, restaurants, coffee shops, multiplexes, and many more. You can also use Paytm to pay for online recharges, utility bill payments, book movie or travel tickets among other things on the Paytm app or website.
+                </p>
+                <h2 class=" font-semibold">How to create Paytm account?</h2>
+                <p class=" font-normal">
+                    1. Open your Paytm app
+                    <br>2. Tap on 'Create A New Account'
+                    <br>3. Enter your mobile that you want to use for Paytm, email address and a password
+                    <br>4. Tap on 'Create a New Account'
+                    <br>5. Enter the OTP that you will receive on your mobile number and click on 'Submit'
+                    <br>6. Enter your First Name, Last Name and DOB
+                    <br>7. Click on 'Create Account'
+                    <br>8. Your account has been created
+                </p>
+                <h2 class=" font-semibold">How to use Paytm?</h2>
+                <p class=" font-normal">
+                    You can use Paytm for many different things such as online recharge, shopping, pay fees, bills and a lot more thing. You will need to at least one of your bank account to your Paytm account and then you can enjoy India's fastest online transactions and payment service. 
+                </p>
+                <h2 class=" font-semibold">How to transfer money back from Paytm to bank account?</h2>
+                <p class=" font-normal">
+                    1. Open your 'Passbook' in your Paytm app
+                    <br>2. Click on 'Send Money to Bank'
+                    <br>3. Enter the transaction amount and account details
+                    <br>4. Click on 'Proceed'
+                    <br>5. Your transaction is complete.
+                </p>
+                <p class=" font-normal">
+                    Note that Paytm charges you 4% of the transaction when you transfer money from your Paytm wallet to a bank account. 
+                </p>
+                <h2 class=" font-semibold">How to do KYC in Paytm?</h2>
+                <p class=" font-normal">
+                    To do your KYC in Paytm, you need to log in to your account on Paytm app and follow these steps-
+                </p>
+                <p class=" font-normal">
+                    1. Go to your 'My Profile Settings' section in Paytm app.
+                    <br>2. Tap on 'Complete your KYC'
+                    <br>3. Select your state and district
+                    <br>4. You will see a list of KYC centres as per the details you have filled. Go to the nearby KYC store to complete your KYC. You will have to carry the required documents such as Aadhar card, Voter ID card, PAN card etc.
+                </p>
+                <h2 class=" font-semibold">How to get free Paytm cash back?</h2>
+                <p class=" font-normal">
+                    You can get free Paytm cash back by applying promo codes while you are proceeding your transactions. Tap on 'Cashback' on the top right corner of your Paytm app to find daily promo codes and offers. You can get additional cash back by purchasing a gift voucher on Paytm.
+                </p>
+                <h2 class=" font-semibold">How to add beneficiary in Paytm?</h2>
+                <p class=" font-normal">
+                    1. Go to 'My Payment Settings' on Paytm app.
+                    <br>2. Tap on 'Manage Beneficiaries'
+                    <br>3. Tap on 'Add New Beneficiary'
+                    <br>4. Enter account details or wallet number of the beneficiary.
+                    <br>5. Tap on 'Add Beneficiary'
+                    <br>6. Enter OTP received on your number
+                    <br>7. Beneficiary is added succesfully
+                </p>
+                <h2 class=" font-semibold">How to add money in Paytm wallet?</h2>
+                <p class=" font-normal">
+                    To add money in your Paytm wallet follow these simple steps-
+                </p>
+                <p class=" font-normal">
+                    1. Go to your 'Passbook'
+                    <br>2. Tap on 'Paytm Wallet'
+                    <br>3. Tap on 'Add money to Paytm Wallet'
+                    <br>4. Enter the amount you want to add in your wallet and click on 'Add Money'
+                    <br>5. Select your mode of the transaction- bank account, debit card, credit card, net banking or BHIM UPI
+                    <br>6. Enter account/card details and tap on 'Pay Securely'                        
+                    <br>7. Enter OTP that you will receive on your mobile number
+                    <br>8. Money is added in your wallet
+                </p>
+                <h2 class=" font-semibold">How to pay through Paytm?</h2>
+                <p class=" font-normal">
+                    1. Tap on 'Pay' on Paytm app
+                    <br>2. Scan the QR code or enter the number of the beneficiary that you want to pay
+                    <br>3. Enter the amount
+                    <br>4. Pay using your Paytm wallet or add money to your Paytm wallet from your bank account if the wallet has insufficient funds
+                    <br>5. The money is paid to the beneficiary
+                </p>
+                <h2 class=" font-semibold">How to use Paytm in Hindi?</h2>
+                <p class=" font-normal">
+                    1. Download Paytm App from here
+                    <br>2. Tap on the top left corner button on your Paytm app
+                    <br>3. Tap on 'Choose Language'
+                    <br>4. Select 'Hindi' as the language and tap on 'Continue'
+                    <br>5. You can use your Paytm app in Hindi now
+                </p>
+                <h2 class=" font-semibold">How to contact Paytm customer care executive? </h2>
+                <p class=" font-normal">
+                    You can get in touch with the customer care executive by calling at one of the following Paytm customer care numbers-
+                </p>
+                <p class=" font-normal">
+                    1. Bank, Wallet and Payments- 0120-4456-456
+                    <br>2. Movies and Events Tickets- 0120-4728-728
+                    <br>3. Paytm Mall Shopping Orders- 0120-4606060
+                    <br>4. Paytm Travel Tickets and Forex- 0120-4880-880
+                </p>
+                <h2 class=" font-semibold">How to pay electricity bill by Paytm?</h2>
+                <p class=" font-normal">
+                    1. Go to electricity bill payment page on Paytm website or Paytm app
+                    <br>2. Select your state
+                    <br>3. Select your board
+                    <br>4. Enter your consumer number
+                    <br>5. Pay your bill through debit card, credit card, net banking or Paytm wallet
+                </p>
+                <h2 class=" font-semibold"> How to reset Paytm password?</h2>
+                <p class=" font-normal">
+                    1. Tap on 'My Security Settings' on your Paytm app
+                    <br>2. Select 'Change Password'
+                    <br>3. Enter your current password
+                    <br>4. Enter a new password and retype your new password in the box belowTap on 'Save'
+                    <br>5. Your password has been changed
+                </p>
+            </div>
+        
+            <div class="flex flex-col md:flex-row md:p-20 p-10">
+                <div class=" flex rounded-xl w-96 mr-10 mb-10 md:mb-1 bg-slate-100">
+                    <img alt="24X7 Help" src="https://assetscdn1.paytm.com/frontendcommonweb/81e12baa.svg" class="w-20 ml-5">
+                    <span class="font-base mx-3 m-20">
+                        <span class="font-extrabold contents">
+                            24X7 Help
+                        </span>
+                        If we fall short of your expectations in any way, let us know.
+                    </span>
+                </div>
+                <div class="flex rounded-xl w-96 mr-10 mb-10 md:mb-1 bg-slate-100">
+                    <img alt="100% Assurance" src="https://assetscdn1.paytm.com/frontendcommonweb/62c8cb34.svg" class="w-20 ml-5">
+                    <span class="flex font-base mx-3 m-20">
+                        <span class="font-extrabold contents">
+                            100% Assurance
+                        </span>
+                        If you face any issue, your money is immediately refunded. Sit back shop on.
+                    </span>
+                </div>
+                <div class="flex rounded-xl w-96 mr-10 mb-10 md:mb-1 bg-slate-100">
+                    <img alt="Paytm Trust" src="https://assetscdn1.paytm.com/frontendcommonweb/b10ce1e4.svg" class="w-20 ml-5">
+                    <span class="flex mx-3 m-20">
+                        <span class="font-extrabold contents">
+                            Paytm Trust
+                        </span>
+                        Your money is yours. All refunds come with no question asked guarantee.
+                    </span>
+                </div>
+            </div>
+            <div class="md:mt-5 md:mt-16 flex flex-col md:flex-row">
+                <div class="md:ml-20 ml-10 rounded-xl p-5 flex hidden md:inline-block mb-10 items-center bg-slate-100 justify-evently">
+                    <a href="/about-us" style="order:1" target="_self" class="px-5 text-xl font-base text-blue-900">About Us</a>
+                    <a href="/partner-with-us" style="order:3" target="_self" class="px-5 text-xl font-base text-blue-900">Partner with us</a>
+                    <a href="https://paytm.com/about-us/our-policies/" style="order:7" target="_self" class="px-5 text-xl font-base text-blue-900">Terms & Conditions</a>
+                    <a href="https://paytm.com/blog" style="order:5" target="_blank" class="px-5 text-xl font-base text-blue-900">Blog</a>
+                    <a href="/care" style="order:2" target="_self" class="px-5 text-xl font-base text-blue-900">24x7 Help</a>
+                    <a href="/our-policy" style="order:4" target="_self" class="px-5 text-xl font-base text-blue-900">Grievance policy</a>
+                    <a href="https://paytm.com/offer/bug-bounty" style="order:6" target="_self" class="px-5 text-xl font-base text-blue-900">Bug bounty</a>
+                </div>
+                <div class="md:mx-auto mx-10 mb-10 md:mb-1">
+                    <div class="inline-block p-2 w-36 border-2 rounded-xl border-sky-400 mr-5 text-black font-semibold">
+                        Become a Seller & Earn
+                    </div>
+                    <div class="inline-block p-2 w-24 border-2 rounded-xl border-sky-400 text-black font-semibold">
+                       Paytm for Business
+                    </div>
+                </div>
+            </div>
+                <div class="flex flex-col md:flex-row justify-between md:mx-20 mx-10">
+                    <div class="md:w-2/5 mr-20 font-extrabold mb-10 md:mb-1">
+                        Be Safe. Be Vigilant
+                        <p class="text-sm mt-5 text-gray-600 font-normal">
+                            Please do not share your Paytm Wallet password, Credit/Debit card pin, other confidential information with anyone even if he/she claims to be from Paytm. We advise our customers to completely ignore such communications & report to us at cybercell@paytmbank.com
+                        </p>
+                    </div>
+                    <div class="md:w-2/5 mr-20 font-extrabold mb-10 md:mb-1">
+                        Disclaimers
+                        <p class="text-sm mb-5 mt-5 text-gray-600 font-normal">
+                            Paytm Wallet is issued by Paytm Payments Bank Limited
+                        </p>
+                        <p class="text-sm mb-5 text-gray-600 font-normal">
+                            Cashback is 'Paytm wallet loyalty cashback' given by 'Pay with Paytm' payment platform. It can be used to pay for goods & services sold by merchants that accept 'Pay with '
+                        </p>
+                    </div>
+                    <div class="md:w-2/5 font-extrabold">
+                        Bank Grade Security with
+                        <div class="flex md:flex-wrap mt-5">
+                            <img alt="" src="https://assetscdn1.paytm.com/frontendcommonweb/31e2efa7.png" class="mr-10 mr-5 h-6">
+                            <img alt="" src="https://assetscdn1.paytm.com/frontendcommonweb/97de04dd.svg" class="mr-10 mr-5 h-6">
+                            <img alt="" src="https://assetscdn1.paytm.com/frontendcommonweb/9f350067.svg" class="mr-10 mr-5 h-6">
+                            <img alt="" src="https://assetscdn1.paytm.com/frontendcommonweb/1f7b0573.svg" class="mr-10 mr-5 h-6">
+                            <img alt="" src="https://assetscdn1.paytm.com/frontendcommonweb/8b44be7e.svg" class="mr-10 mr-5 h-6 md:mt-10">
+                            <img alt="" src="https://assetscdn1.paytm.com/frontendcommonweb/0ce2133c.svg"class="mr-10 mr-5 h-6 md:mt-10">
+                        </div>
+                    </div>
+                 </div>
+            <div class="py-3 flex justify-end flex-row-reverse text-sm text-gray-600 font-extrabold mx-20">
+                <span class="mr-3 ">Company</span>
+                    <img src="https://assetscdn1.paytm.com/frontendcommonweb/877b7c00.svg" alt="plus" class="mr-3">
+            </div>
+            <!-- <div class="overflow-hidden ml-6">
+                <div class="flex">
+                    <div class="block w-48 pb-7 relative text-gray-600-font-base">
+                        <a href="/about-us" rel="noopener noreferrer" class="mr-7">About Us</a>
+                    </div>
+                    <div class="block w-48 pb-7 relative text-gray-600-font-base">
+                        <a href="https://paytm.com/blog" rel="noopener noreferrer" class="mr-7">Blog</a>
+                    </div>
+                    <div class="block w-48 pb-7 relative text-gray-600-font-base">
+                        <a href="/contact-us" rel="noopener noreferrer" class="mr-7">Contact Us</a>
+                    </div>
+                </div>
+            </div> -->
+            <div class="py-3 flex justify-end flex-row-reverse text-gray-600 font-extrabold mx-20">
+                <span class="mr-3 ">Investor Relations</span>
+                    <img src="https://assetscdn1.paytm.com/frontendcommonweb/877b7c00.svg" alt="plus" class="mr-3">
+            </div>
+            <!-- <div class="overflow-hidden ml-6">
+                <div class="flex">
+                    <div class="block w-48 pb-7 relative text-gray-600-font-base">
+                        <span>Financial Information </span>
+                        <div class="flex width-11/12 pt-5 pl-5 flex-wrap rounded border-1 text-gray-600 font-base">
+                            <a target="_blank" rel="noreferrer" href="/investor-relations/annual-reports" class="w-32 pb-5 font-sm font-bold">Annual Reports </a>
+                            <a target="_blank" rel="noreferrer" href="/investor-relations/financial-results" class="w-32 pb-5 font-sm font-bold">Financial Results </a>
+                            <a target="_blank" rel="noreferrer" href="/investor-relations/subsidiary-financial-statements" class="w-32 pb-5 font-sm font-bold">Subsidiary Financial Statements</a>
+                        </div> -->
+                    <!-- </div>
+                    <div class="block w-48 pb-7 relative text-gray-600-font-base">
+                        <span>Corporate Governance </span>
+                        <div class="flex width-11/12 pt-5 pl-5 flex-wrap rounded border-1 text-gray-600 font-base">
+                            <a target="_blank" rel="noreferrer" href="/investor-relations/annual-reports" class="w-32 pb-5 font-sm font-bold">Board of Directors & Comittees </a>
+                            <a target="_blank" rel="noreferrer" href="/investor-relations/financial-results" class="w-32 pb-5 font-sm font-bold">Policies and Guidelines </a>
+                            <a target="_blank" rel="noreferrer" href="/investor-relations/subsidiary-financial-statements" class="w-32 pb-5 font-sm font-bold">Constitutional Documents</a>
+                            <a target="_blank" rel="noreferrer" href="/investor-relations/subsidiary-financial-statements" class="w-32 pb-5 font-sm font-bold">Annual Returns</a>
+                        </div>
+                    </div>
+                    <div class="block w-48 pb-7 relative text-gray-600-font-base">
+                        <a href="/investor-relations/stock-exchange-submissions" rel="noopener noreferrer" class="w-32 pb-5 font-sm font-bold">Stock Exchange Submissions</a>
+                    </div>
+                    <div class="block w-48 pb-7 relative text-gray-600-font-base">
+                        <span>General Meetings </span>
+                        <div class="flex width-11/12 pt-5 pl-5 flex-wrap rounded border-1 text-gray-600 font-base">
+                            <a target="_blank" rel="noreferrer" href="/investor-relations/annual-reports" class="w-32 pb-5 font-sm font-bold">AGM </a>
+                            <a target="_blank" rel="noreferrer" href="/investor-relations/financial-results" class="w-32 pb-5 font-sm font-bold">EGM </a>
+                            <a target="_blank" rel="noreferrer" href="/investor-relations/subsidiary-financial-statements" class="w-32 pb-5 font-sm font-bold">Postal Ballot</a>
+                        </div>
+                    </div>
+                    <div class="block w-48 pb-7 relative text-gray-600-font-base">
+                        <span>Investor Resource </span>
+                        <div class="flex width-11/12 pt-5 pl-5 flex-wrap rounded border-1 text-gray-600 font-base">
+                            <a target="_blank" rel="noreferrer" href="/investor-relations/annual-reports" class="w-32 pb-5 font-sm font-bold">Fact Sheet </a>
+                            <a target="_blank" rel="noreferrer" href="/investor-relations/financial-results" class="w-32 pb-5 font-sm font-bold">IPO Documents </a>
+                            <a target="_blank" rel="noreferrer" href="/investor-relations/subsidiary-financial-statements" class="w-32 pb-5 font-sm font-bold">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="overflow-hidden ml-6">
+                <div class="flex">
+                    <div class="py-3 flex justify-end flex-row-reverse text-gray-600 font-extrabold mx-20">
+                        <span>Career </span>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3 flex justify-end flex-row-reverse text-sm text-gray-600 font-extrabold mx-20">
+                <span class="mr-3 ">Recharge & Pay Bills</span>
+                    <img src="https://assetscdn1.paytm.com/frontendcommonweb/877b7c00.svg" alt="plus" class="mr-3">
+            </div>
+            <!-- <div class="overflow-hidden ml-6">
+                <div class="flex">
+                    <div class="block w-48 pb-7 relative text-gray-600-font-base">
+                        <span>Mobile Recharge</span>
+                        <div class="flex width-11/12 pt-5 pl-5 flex-wrap rounded border-1 text-gray-600 font-base">
+                            <a target="_blank" rel="noreferrer" href="/recharge" class="w-32 pb-5 font-sm font-bold">Mobile Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/recharge/airtel-prepaid-mobile-online-recharge"class="w-32 pb-5 font-sm font-bold">Airtel Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/recharge/bsnl-prepaid-mobile-online-recharge"class="w-32 pb-5 font-sm font-bold">BSNL Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/recharge/jio-prepaid-mobile-online-recharge"class="w-32 pb-5 font-sm font-bold">Jio Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/recharge/mtnl-prepaid-mobile-online-recharge"class="w-32 pb-5 font-sm font-bold">MTNL Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/recharge/vodafone-idea-prepaid-mobile-online-recharge"class="w-32 pb-5 font-sm font-bold">Vodafone Idea Recharge</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow-hidden ml-6">
+                <div class="flex">
+                    <div class="block w-48 pb-7 relative text-gray-600-font-base">
+                        <span>Mobile Bill Payment</span>
+                        <div class="flex width-11/12 pt-5 pl-5 flex-wrap rounded border-1 text-gray-600 font-base">
+                            <a target="_blank" rel="noreferrer" href="/mobile-bill-payment" class="w-32 pb-5 font-sm font-bold">Mobile Bill Payment</a>
+                            <a target="_blank" rel="noreferrer" href="/mobile-bill-payment/airtel-postpaid" class="w-32 pb-5 font-sm font-bold">Airtel Bill Payment</a>
+                            <a target="_blank" rel="noreferrer" href="/mobile-bill-payment/bsnl-postpaid" class="w-32 pb-5 font-sm font-bold">BSNL Bill Payment</a>
+                            <a target="_blank" rel="noreferrer" href="/mobile-bill-payment/jio-postpaid" class="w-32 pb-5 font-sm font-bold">Jio Bill Payment</a>
+                            <a target="_blank" rel="noreferrer" href="/mobile-bill-payment/mtnl-dolphin-postpaid" class="w-32 pb-5 font-sm font-bold">MTNL DOLPHIN Bill Payment</a>
+                            <a target="_blank" rel="noreferrer" href="/mobile-bill-payment/vodafone-idea-postpaid" class="w-32 pb-5 font-sm font-bold">Vodafone Idea Bill Payment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow-hidden ml-6">
+                <div class="flex">
+                    <div class="block w-48 pb-7 relative text-gray-600-font-base">
+                        <span>Datacard Recharge</span>
+                        <div class="flex width-11/12 pt-5 pl-5 flex-wrap rounded border-1 text-gray-600 font-base">
+                            <a target="_blank" rel="noreferrer" href="/datacard-recharge" class="w-32 pb-5 font-sm font-bold">Datacard Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/datacard-recharge/airtel" class="w-32 pb-5 font-sm font-bold">Airtel Datacard Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/datacard-recharge/bsnl" class="w-32 pb-5 font-sm font-bold">BSNL Datacard Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/datacard-recharge/idea" class="w-32 pb-5 font-sm font-bold">Idea Datacard Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/datacard-recharge/jio" class="w-32 pb-5 font-sm font-bold">Jio Datacard Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/datacard-recharge/mtnl" class="w-32 pb-5 font-sm font-bold">MTNL Datacard Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/datacard-recharge/vodafone-idea" class="w-32 pb-5 font-sm font-bold">Vodafone Idea Datacard Recharge</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow-hidden ml-6">
+                <div class="flex">
+                    <div class="block w-48 pb-7 relative text-gray-600-font-base">
+                        <span>Datacard Bill Payment</span>
+                        <div class="flex width-11/12 pt-5 pl-5 flex-wrap rounded border-1 text-gray-600 font-base">
+                            <a target="_blank" rel="noreferrer" href="/datacard-bill-payment" class="w-32 pb-5 font-sm font-bold">Datacard Bill Payment</a>
+                            <a target="_blank" rel="noreferrer" href="/datacard-bill-payment/airtel" class="w-32 pb-5 font-sm font-bold">Airtel Datacard Bill Payment</a>
+                            <a target="_blank" rel="noreferrer" href="/datacard-bill-payment/bsnl" class="w-32 pb-5 font-sm font-bold">BSNL Datacard Bill Payment</a>
+                            <a target="_blank" rel="noreferrer" href="/datacard-bill-payment/idea" class="w-32 pb-5 font-sm font-bold">Idea Datacard Bill Payment</a>
+                            <a target="_blank" rel="noreferrer" href="/datacard-bill-payment/mtnl" class="w-32 pb-5 font-sm font-bold">MTNL Datacard Bill Payment</a>
+                            <a target="_blank" rel="noreferrer" href="/datacard-bill-payment/vodafone" class="w-32 pb-5 font-sm font-bold">Vodafone Datacard Bill Payment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow-hidden ml-6">
+                <div class="flex">
+                    <div class="block w-48 pb-7 relative text-gray-600-font-base">
+                        <span>Dth Recharge</span>
+                        <div class="flex width-11/12 pt-5 pl-5 flex-wrap rounded border-1 text-gray-600 font-base">
+                            <a target="_blank" rel="noreferrer" href="/dth-recharge" class="w-32 pb-5 font-sm font-bold">Dth Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/dth-recharge/airtel-digital-tv" class="w-32 pb-5 font-sm font-bold">Airtel Digital TV Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/dth-recharge/dish-tv" class="w-32 pb-5 font-sm font-bold">Dish TV Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/dth-recharge/sun-direct" class="w-32 pb-5 font-sm font-bold">Sun Direct Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/dth-recharge/tata-sky" class="w-32 pb-5 font-sm font-bold">Tata Sky Recharge</a>
+                            <a target="_blank" rel="noreferrer" href="/dth-recharge/d2h" class="w-32 pb-5 font-sm font-bold">d2h Recharge</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow-hidden ml-6">
+                <div class="flex">
+                    <div class="block w-48 pb-7 relative text-gray-600-font-base">
+                        <span>Electricity Bill Payment</span>
+                        <div class="flex width-11/12 pt-5 pl-5 flex-wrap rounded border-1 text-gray-600 font-base">
+                            <div class="w-32 pb-5 font-bold">
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment">Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/andhra-pradesh">Andhra Pradesh Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/arunachal-pradesh">Arunachal Pradesh Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/assam">Assam Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/bihar">Bihar Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/chandigarh">Chandigarh Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/chhattisgarh">Chhattisgarh Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/dadra-and-nagar-haveli">Dadra and Nagar Haveli Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/daman-and-diu">Daman And Diu Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/goa">Goa Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/gujarat">Gujarat Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/haryana">Haryana Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/himachal-pradesh">Himachal Pradesh Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/jammu-and-kashmir">Jammu and Kashmir Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/jharkhand">Jharkhand Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/karnataka">Karnataka Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/kerala">Kerala Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/lakshadweep">Lakshadweep Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/madhya-pradesh">Madhya Pradesh Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/maharashtra">Maharashtra Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/manipur">Manipur Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/meghalaya">Meghalaya Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/mizoram">Mizoram Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/nagaland">Nagaland Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/new-delhi">New Delhi Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/odisha">Odisha Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/pondicherry">Pondicherry Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/punjab">Punjab Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/rajasthan">Rajasthan Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/sikkim">Sikkim Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/tamil-nadu">Tamil Nadu Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/telangana">Telangana Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/tripura">Tripura Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/uttar-pradesh">Uttar Pradesh Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/uttarakhand">Uttarakhand Electricity Bill Payment</a>
+                                <a target="_blank" rel="noreferrer" href="/electricity-bill-payment/west-bengal">West Bengal Electricity Bill Payment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="py-3 flex justify-end flex-row-reverse text-sm text-gray-600 font-extrabold mx-20">
+                <span class="mr-3 ">Pay Loan EMI, Insurance Premiums & Education Fee</span>
+                    <img src="https://assetscdn1.paytm.com/frontendcommonweb/877b7c00.svg" alt="plus" class="mr-3">
+            </div>
+            <div class="py-3 flex justify-end flex-row-reverse text-sm text-gray-600 font-extrabold mx-20">
+                <span class="mr-3 ">Book Travel & Entertainment</span>
+                    <img src="https://assetscdn1.paytm.com/frontendcommonweb/877b7c00.svg" alt="plus" class="mr-3">
+            </div>
+            <div class="py-3 flex justify-end flex-row-reverse text-sm text-gray-600 font-extrabold mx-20">
+                <span class="mr-3 ">Investments & Miscellaneous</span>
+                    <img src="https://assetscdn1.paytm.com/frontendcommonweb/877b7c00.svg" alt="plus" class="mr-3">
+            </div>
+            <div class="py-3 flex justify-end flex-row-reverse text-sm text-gray-600 font-extrabold mx-20">
+                <span class="mr-3 ">Insurance (Powered by Paytm Insurance Broking Private Limited)</span>
+                    <img src="https://assetscdn1.paytm.com/frontendcommonweb/877b7c00.svg" alt="plus" class="mr-3">
+            </div>
+            <div class="py-3 flex justify-end flex-row-reverse text-sm text-gray-600 font-extrabold mx-20">
+                <span class="mr-3 ">Loan and Credit Cards</span>
+                    <img src="https://assetscdn1.paytm.com/frontendcommonweb/877b7c00.svg" alt="plus" class="mr-3">
+            </div>
+            <div class="py-3 flex justify-end flex-row-reverse text-sm text-gray-600 font-extrabold mx-20">
+                <span class="mr-3 ">Financial Tools & Calculators</span>
+                    <img src="https://assetscdn1.paytm.com/frontendcommonweb/877b7c00.svg" alt="plus" class="mr-3">
+            </div>
+            <div class="bg-sky-500 p-1 "></div>
+            <div class="bg-blue-700 p-1 "></div>
+        </div>    
+    </footer>
+
+</body>
+</html>
